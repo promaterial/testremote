@@ -1,0 +1,35 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# COCO128-seg dataset https://www.kaggle.com/datasets/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/segment/coco/
+# Example usage: yolo train data=coco128.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco128-seg  ← downloads here (7 MB)
+
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: C:\Users\huang\Desktop\Steel_surface_defect_detection\defect_images\defect_images # dataset root dir
+path: /content/drive/MyDrive/Steel_surface_defect_detection/defect_images/defect_images
+train: train/images # train images (relative to 'path') 3717 images
+val: valid/images # val images (relative to 'path') 112 images
+#test: images/test # test images (relative to 'path') 200 images
+
+# Classes
+#names:
+#  0: rebar exposure
+#  1: spalling
+names: ['bubble','chipping','crack','scratches','sc']
+#path: D:\waibao\yolo11\ultralytics-main\mydata5 # dataset root dir
+#train: images/train # train images (relative to 'path') 4 images
+#val: images/train # val images (relative to 'path') 4 images
+#test: # test images (optional)
+#
+## Classes
+#names:
+#  0: rebar_exposure
+#  1: spalling
+
+
